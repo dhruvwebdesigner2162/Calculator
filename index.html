@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/calculator.css">
+</head>
+
+<body>
+
+    <div class="container h-100 d-flex justify-content-center align-items-center">
+        <div class="row w-100 d-flex justify-content-center align-items-center">
+            <div class="col-sm-7 col-12 bgi rounded-3 py-5 px-5 shadow-lg">
+                <h1 class="text-white mb-5">
+                    Calculator
+                </h1>
+                <form action="">
+                    <input type="number" class="form-control" id="num1" placeholder="First Value">
+                    <input type="number" class="form-control mt-4" id="num2" placeholder="Second Value">
+                    <div class="buttons d-flex justify-content-between mt-4">
+                        <button type="button"
+                            class="btn btn-primary d-flex justify-content-center align-items-center fw-bold"
+                            onclick="addition()">+</button>
+                        <button type="button"
+                            class="btn btn-primary d-flex justify-content-center align-items-center fw-bold"
+                            onclick="substraction()">-</button>
+                        <button type="button"
+                            class="btn btn-primary d-flex justify-content-center align-items-center fw-bold"
+                            onclick="multiplication()">*</button>
+                        <button type="button"
+                            class="btn btn-primary d-flex justify-content-center align-items-center fw-bold"
+                            onclick="division()">/</button>
+                        <button type="button"
+                            class="btn btn-primary d-flex justify-content-center align-items-center fw-bold"
+                            onclick="modulo()">%</button>
+                    </div>
+
+                    <h2 class="bg-white mt-4 text-center rounded-3 py-1" id="result">
+                        Result
+                    </h2>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/calculator.js"></script>
+</body>
+
+</html>

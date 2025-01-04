@@ -1,0 +1,17 @@
+body {
+    height: 100vh;
+    background-color: rgb(221, 239, 255);
+}
+
+.bgi {
+    background-image: url(../images/calculator\ background\ image.jfif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@media(max-width: 435px) {
+    .bgi {
+        padding-inline: 20px !important;
+    }
+}
